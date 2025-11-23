@@ -30,14 +30,18 @@ public class HealthMetrics {
     @Column(name = "health", nullable = false)
     private double health;
 
+    @Column(name = "height")
+    private double height;
+
     @Column(name = "heart_rate", nullable = false)
     private int heartRate;
 
-    public HealthMetrics(User user, LocalDate date, double weight, double health, int heartRate) {
+    public HealthMetrics(User user, LocalDate date, double weight, double health, int heartRate, double height) {
         this.user = user;
         this.date = date;
         this.weight = weight;
         this.health = health;
+        this.height = height;
         this.heartRate = heartRate;
     }
 }
