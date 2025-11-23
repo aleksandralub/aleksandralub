@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 import io.micrometer.common.lang.Nullable;
 
 @Entity
-@Table(name = "user_events")
+@Table(name = "user_event")
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @ToString(exclude = {"user", "event"})
